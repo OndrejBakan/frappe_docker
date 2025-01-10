@@ -125,7 +125,7 @@ services:
       - sites:/home/frappe/frappe-bench/sites
       - logs:/home/frappe/frappe-bench/logs
     ports:
-      - "8080:8080"
+      - "${SOME_VARIABLE_IN_COOLIFY_UI}:8080"
 
   queue-long:
     image: frappe/erpnext:v15.48.2
